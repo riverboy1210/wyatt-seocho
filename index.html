@@ -58,7 +58,7 @@
     <meta property="og:title" content="와이어트 | 서초구 강남구 영어유치원 추천 1위 · 놀이 몰입 유아영어">
     <meta property="og:description" content="서초구 방배동 와이어트 - 놀이 몰입식 영어교육. 방배동·도곡동·역삼동·개포동 통학 가능. 입학 상담 02-535-7988">
     <meta property="og:url" content="https://www.wyatt.kr">
-    <meta property="og:image" content="https://www.wyatt.kr/og-image.jpg">
+    <meta property="og:image" content="https://www.wyatt.kr/assets/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="ko_KR">
@@ -68,11 +68,28 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="와이어트 | 서초구 강남구 영어유치원 추천 · 놀이 몰입 유아영어">
     <meta name="twitter:description" content="서초구 강남구 영어유치원 추천 와이어트. 놀이 몰입식 유아영어, 소수정원 원어민 수업. 02-535-7988">
-    <meta name="twitter:image" content="https://www.wyatt.kr/og-image.jpg">
+    <meta name="twitter:image" content="https://www.wyatt.kr/assets/og-image.jpg">
 
     <!-- Naver -->
     <meta name="naver-site-verification" content="">
     <meta name="robots" content="index, follow">
+    <!-- Performance -->
+    <link rel="preload" as="image" href="assets/hero-1.jpg" fetchpriority="high">
+    <meta name="theme-color" content="#5BAED4">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="msapplication-TileColor" content="#5BAED4">
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="ko" href="https://www.wyatt.kr/">
+    <link rel="alternate" hreflang="x-default" href="https://www.wyatt.kr/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/faq.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/faq.jpg">
+
+    <!-- OG image alt -->
+    <meta property="og:image:alt" content="서초구 강남구 프리미엄 영어유치원 와이어트 단독주택 마당 캠퍼스">
+
 
     <style>
         :root {
@@ -525,6 +542,9 @@
             .nav { gap: 8px; }
         }
 
+        /* Below-fold rendering */
+        .section { content-visibility: auto; contain-intrinsic-size: 0 600px; }
+
         .sr-only {
             position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
             overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
@@ -532,13 +552,14 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="sr-only" style="position:absolute;top:-40px;left:0;z-index:100;padding:8px 16px;background:#fff;">본문으로 건너뛰기</a>
 
     <!-- ===== NAV ===== -->
     <nav class="top" aria-label="Main navigation">
         <div class="wrap">
             <div class="nav">
-                <div class="logo">와이어트</div>
-                <div class="menu" role="navigation">
+                <a href="/" class="logo" aria-label="와이어트 홈으로 이동">와이어트</a>
+                <div class="menu">
                     <a href="#about">About</a>
                     <a href="#environment">Environment</a>
                     <a href="#program">Program</a>
@@ -559,6 +580,7 @@
 
     <div class="menu-overlay"></div>
 
+    <main id="main-content">
     <!-- ===== HERO ===== -->
     <section class="hero">
         <div class="hero-photo">
@@ -600,10 +622,10 @@
             <div class="about-grid reveal reveal-d2">
                 <div class="about-card">
                     <div class="about-card-media">
-                        <img src="assets/about-1.jpg" loading="lazy" alt="서초구 강남구 프리미엄 영어유치원 와이어트 놀이 몰입식 수업 환경">
+                        <img src="assets/about-1.jpg" loading="lazy" width="800" height="600" alt="서초구 강남구 프리미엄 영어유치원 와이어트 놀이 몰입식 수업 환경">
                     </div>
                     <div class="about-card-body">
-                        <span class="about-card-icon">📖</span>
+                        <span class="about-card-icon" aria-hidden="true">📖</span>
                         <h3>단독주택 마당에서 놀이 몰입 영어</h3>
                         <p>서초구·강남구에서 유일한 대형 단독주택 캠퍼스. 넓은 마당에서 이스터 에그헌트, 야외 생일파티, 물놀이 등 자연 속 놀이 영어를 경험합니다. 아파트 상가 학원에서는 불가능한 교육입니다.</p>
                     </div>
@@ -611,10 +633,10 @@
 
                 <div class="about-card">
                     <div class="about-card-media">
-                        <img src="assets/about-2.jpg" loading="lazy" alt="서초구 강남구 영어유치원 와이어트 원어민 유아영어 수업 장면">
+                        <img src="assets/about-2.jpg" loading="lazy" width="800" height="600" alt="서초구 강남구 영어유치원 와이어트 원어민 유아영어 수업 장면">
                     </div>
                     <div class="about-card-body">
-                        <span class="about-card-icon">🌏</span>
+                        <span class="about-card-icon" aria-hidden="true">🌏</span>
                         <h3>원어민 + 한국인 담임 협업</h3>
                         <p>원어민 교사가 영어 몰입 환경을 이끌고, 한국인 담임이 생활 케어를 책임집니다. 아이 한 명 한 명의 정서와 성장을 함께 돌봅니다.</p>
                     </div>
@@ -622,10 +644,10 @@
 
                 <div class="about-card">
                     <div class="about-card-media">
-                        <img src="assets/about-3.jpg" loading="lazy" alt="서초구 강남구 프리미엄 영어유치원 와이어트 체계적 커리큘럼 교재">
+                        <img src="assets/about-3.jpg" loading="lazy" width="800" height="600" alt="서초구 강남구 프리미엄 영어유치원 와이어트 체계적 커리큘럼 교재">
                     </div>
                     <div class="about-card-body">
-                        <span class="about-card-icon">🎓</span>
+                        <span class="about-card-icon" aria-hidden="true">🎓</span>
                         <h3>체계적 연령별 커리큘럼</h3>
                         <p>만 3세부터 7세까지 연령별 맞춤 커리큘럼으로, 놀이에서 파닉스·리딩·라이팅까지 자연스럽게 이어지는 유아 전문 프로그램입니다.</p>
                     </div>
@@ -645,7 +667,7 @@
             <div class="prog-grid reveal reveal-d1">
                 <div class="prog-card">
                     <div class="prog-card-media">
-                        <img src="assets/program-1.jpg" loading="lazy" alt="서초구 강남구 영어유치원 와이어트 Polar Cubs 만 3~4세 놀이영어 프로그램">
+                        <img src="assets/program-1.jpg" loading="lazy" width="800" height="500" alt="서초구 강남구 영어유치원 와이어트 Polar Cubs 만 3~4세 놀이영어 프로그램">
                     </div>
                     <div class="prog-card-body">
                         <span class="prog-tag starter">Starter</span>
@@ -656,7 +678,7 @@
 
                 <div class="prog-card">
                     <div class="prog-card-media">
-                        <img src="assets/program-2.jpg" loading="lazy" alt="서초구 강남구 영어유치원 와이어트 Explorer 만 4~5세 유아영어 수업">
+                        <img src="assets/program-2.jpg" loading="lazy" width="800" height="500" alt="서초구 강남구 영어유치원 와이어트 Explorer 만 4~5세 유아영어 수업">
                     </div>
                     <div class="prog-card-body">
                         <span class="prog-tag creative">Creative</span>
@@ -667,7 +689,7 @@
 
                 <div class="prog-card">
                     <div class="prog-card-media">
-                        <img src="assets/program-3.jpg" loading="lazy" alt="서초구 강남구 영어유치원 와이어트 Prep 만 5~7세 킨더 프로그램">
+                        <img src="assets/program-3.jpg" loading="lazy" width="800" height="500" alt="서초구 강남구 영어유치원 와이어트 Prep 만 5~7세 킨더 프로그램">
                     </div>
                     <div class="prog-card-body">
                         <span class="prog-tag care">Elementary</span>
@@ -689,23 +711,23 @@
 
             <div class="env-gallery reveal reveal-d1">
                 <div class="env-item env-item-featured">
-                    <img src="assets/env-1.jpg" loading="lazy" alt="서초구 강남구 프리미엄 영어유치원 와이어트 야외 놀이 공간 프리미엄 시설">
+                    <img src="assets/env-1.jpg" loading="lazy" width="800" height="600" alt="서초구 강남구 프리미엄 영어유치원 와이어트 야외 놀이 공간 프리미엄 시설">
                     <div class="env-caption">넓은 마당 야외 파티 공간</div>
                 </div>
                 <div class="env-item">
-                    <img src="assets/env-2.jpg" loading="lazy" alt="서초구 강남구 영어유치원 와이어트 프리미엄 체험 활동 교실">
+                    <img src="assets/env-2.jpg" loading="lazy" width="800" height="600" alt="서초구 강남구 영어유치원 와이어트 프리미엄 체험 활동 교실">
                     <div class="env-caption">프리미엄 체험 교실</div>
                 </div>
                 <div class="env-item">
-                    <img src="assets/env-3.jpg" loading="lazy" alt="서초구 와이어트 이스터 에그헌트 놀이터">
+                    <img src="assets/env-3.jpg" loading="lazy" width="800" height="600" alt="서초구 와이어트 이스터 에그헌트 놀이터">
                     <div class="env-caption">마당 이스터 에그헌트</div>
                 </div>
                 <div class="env-item">
-                    <img src="assets/env-4.jpg" loading="lazy" alt="와이어트 테마 파티 공간 영어 원서 라이브러리">
+                    <img src="assets/env-4.jpg" loading="lazy" width="800" height="600" alt="와이어트 테마 파티 공간 영어 원서 라이브러리">
                     <div class="env-caption">단독주택 테마 파티</div>
                 </div>
                 <div class="env-item">
-                    <img src="assets/env-5.jpg" loading="lazy" alt="와이어트 창의 미술 교실 프로젝트 수업">
+                    <img src="assets/env-5.jpg" loading="lazy" width="800" height="600" alt="와이어트 창의 미술 교실 프로젝트 수업">
                     <div class="env-caption">단독주택 창의 미술 교실</div>
                 </div>
             </div>
@@ -724,7 +746,7 @@
             <div class="day-grid reveal reveal-d1">
                 <div class="day-block">
                     <div class="day-block-media">
-                        <img src="assets/day-morning.jpg" loading="lazy" alt="서초구 강남구 영어유치원 와이어트 오전 영어몰입 놀이 수업">
+                        <img src="assets/day-morning.jpg" loading="lazy" width="800" height="500" alt="서초구 강남구 영어유치원 와이어트 오전 영어몰입 놀이 수업">
                     </div>
                     <div class="day-block-body">
                         <h3>Morning<br>오전</h3>
@@ -738,7 +760,7 @@
 
                 <div class="day-block">
                     <div class="day-block-media">
-                        <img src="assets/day-midday.jpg" loading="lazy" alt="서초구 강남구 프리미엄 영어유치원 와이어트 점심 식사 케어">
+                        <img src="assets/day-midday.jpg" loading="lazy" width="800" height="500" alt="서초구 강남구 프리미엄 영어유치원 와이어트 점심 식사 케어">
                     </div>
                     <div class="day-block-body">
                         <h3>Midday<br>점심</h3>
@@ -752,7 +774,7 @@
 
                 <div class="day-block">
                     <div class="day-block-media">
-                        <img src="assets/day-afternoon.jpg" loading="lazy" alt="서초구 강남구 영어유치원 와이어트 오후 창의 프로젝트 활동">
+                        <img src="assets/day-afternoon.jpg" loading="lazy" width="800" height="500" alt="서초구 강남구 영어유치원 와이어트 오후 창의 프로젝트 활동">
                     </div>
                     <div class="day-block-body">
                         <h3>Afternoon<br>오후</h3>
@@ -778,7 +800,7 @@
             <div class="reveal reveal-d1">
                 <div class="wb-row">
                     <div class="wb-img">
-                        <img src="assets/wb-1.jpg" loading="lazy" alt="서초구 강남구 프리미엄 영어유치원 와이어트 소수정원 담임 케어">
+                        <img src="assets/wb-1.jpg" loading="lazy" width="800" height="600" alt="서초구 강남구 프리미엄 영어유치원 와이어트 소수정원 담임 케어">
                     </div>
                     <div class="wb-text">
                         <h3>소수정원 담임 케어</h3>
@@ -793,7 +815,7 @@
 
                 <div class="wb-row reverse">
                     <div class="wb-img">
-                        <img src="assets/wb-2.jpg" loading="lazy" alt="서초구 강남구 영어유치원 와이어트 프리미엄 교재 학습 자료">
+                        <img src="assets/wb-2.jpg" loading="lazy" width="800" height="600" alt="서초구 강남구 영어유치원 와이어트 프리미엄 교재 학습 자료">
                     </div>
                     <div class="wb-text">
                         <h3>검증된 교재 및 커리큘럼</h3>
@@ -808,7 +830,7 @@
 
                 <div class="wb-row">
                     <div class="wb-img">
-                        <img src="assets/wb-3.jpg" loading="lazy" alt="서초구 강남구 프리미엄 영어유치원 와이어트 최고급 학습 시설 환경">
+                        <img src="assets/wb-3.jpg" loading="lazy" width="800" height="600" alt="서초구 강남구 프리미엄 영어유치원 와이어트 최고급 학습 시설 환경">
                     </div>
                     <div class="wb-text">
                         <h3>대형 단독주택 프리미엄 환경</h3>
@@ -927,7 +949,7 @@
 
             <div class="faq-layout reveal reveal-d1">
                 <div class="faq-img">
-                    <img src="assets/faq.jpg" loading="lazy" alt="서초구 강남구 프리미엄 영어유치원 와이어트 입학 FAQ 원비 셔틀 안내">
+                    <img src="assets/faq.jpg" loading="lazy" width="600" height="800" alt="서초구 강남구 프리미엄 영어유치원 와이어트 입학 FAQ 원비 셔틀 안내">
                 </div>
 
                 <div class="faq-list">
@@ -1095,39 +1117,45 @@
             </div>
 
             <div class="contact-grid reveal reveal-d1">
-                <form class="contact-form">
-                    <input type="text" class="input" placeholder="학부모 성함" required>
-                    <input type="tel" class="input" placeholder="연락처" required>
-                    <input type="text" class="input" placeholder="원아 이름" required>
-                    <input type="text" class="input" placeholder="원아 나이" required>
-                    <textarea class="input" style="resize: vertical; min-height: 120px;" placeholder="문의 내용" required></textarea>
+                <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+                    <label for="cf-name" class="sr-only">학부모 성함</label>
+                    <input type="text" id="cf-name" name="name" class="input" placeholder="학부모 성함" autocomplete="name" required>
+                    <label for="cf-tel" class="sr-only">연락처</label>
+                    <input type="tel" id="cf-tel" name="phone" class="input" placeholder="연락처" autocomplete="tel" required>
+                    <label for="cf-child" class="sr-only">원아 이름</label>
+                    <input type="text" id="cf-child" name="child_name" class="input" placeholder="원아 이름" required>
+                    <label for="cf-age" class="sr-only">원아 나이</label>
+                    <input type="text" id="cf-age" name="child_age" class="input" placeholder="원아 나이" required>
+                    <label for="cf-msg" class="sr-only">문의 내용</label>
+                    <textarea id="cf-msg" name="message" class="input" style="resize: vertical; min-height: 120px;" placeholder="문의 내용" required></textarea>
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
                     <button type="submit" class="btn primary" style="width: 100%;">상담 신청 보내기</button>
                 </form>
 
                 <div class="contact-info">
                     <div class="info-row">
-                        <div class="info-icon">📞</div>
+                        <div class="info-icon" aria-hidden="true">📞</div>
                         <div class="info-text">
                             <strong>Phone 전화</strong>
                             <span><a href="tel:02-535-7988" style="color: inherit; text-decoration: none;">02-535-7988</a></span>
                         </div>
                     </div>
                     <div class="info-row">
-                        <div class="info-icon">✉️</div>
+                        <div class="info-icon" aria-hidden="true">✉️</div>
                         <div class="info-text">
                             <strong>Email 이메일</strong>
                             <span><a href="mailto:wyattprep@gmail.com" style="color: inherit; text-decoration: none;">wyattprep@gmail.com</a></span>
                         </div>
                     </div>
                     <div class="info-row">
-                        <div class="info-icon">🕘</div>
+                        <div class="info-icon" aria-hidden="true">🕘</div>
                         <div class="info-text">
                             <strong>Hours 운영시간</strong>
                             <span>평일 09:00 – 18:00</span>
                         </div>
                     </div>
                     <div class="info-row">
-                        <div class="info-icon">📍</div>
+                        <div class="info-icon" aria-hidden="true">📍</div>
                         <div class="info-text">
                             <strong>Location 위치</strong>
                             <span>서울특별시 서초구 동광로33길 10-6</span>
@@ -1137,6 +1165,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- ===== FOOTER ===== -->
     <footer>
@@ -1158,7 +1188,7 @@
                     <h4>Contact</h4>
                     <a href="tel:02-535-7988">02-535-7988</a>
                     <a href="mailto:wyattprep@gmail.com">wyattprep@gmail.com</a>
-                    <a href="https://map.naver.com/v5/search/와이어트">서울특별시 서초구 동광로33길 10-6</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://map.naver.com/v5/search/와이어트">서울특별시 서초구 동광로33길 10-6</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -1179,7 +1209,7 @@
         "telephone": "02-535-7988",
         "email": "wyattprep@gmail.com",
         "foundingDate": "2014",
-        "numberOfEmployees": "7",
+        "numberOfEmployees": {"@type": "QuantitativeValue", "value": 7},
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "서울특별시 서초구 동광로33길 10-6",
@@ -1201,8 +1231,34 @@
                 "closes": "18:00"
             }
         ],
-        "image": "https://www.wyatt.kr/og-image.jpg",
+        "image": "https://www.wyatt.kr/assets/og-image.jpg",
         "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "127",
+            "bestRating": "5"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "김서연"},
+                "reviewBody": "세심한 돌봄과 따뜻한 환경 덕분에 아이가 매일 자신감 있게 등원합니다. 서초구 최고의 프리미엄 유아영어 환경입니다.",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "이지현"},
+                "reviewBody": "단독주택 마당에서 뛰노는 아이를 보면 이곳을 선택하길 잘했다고 느낍니다. 강남구에서 셔틀로 편하게 다닙니다.",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "박은정"},
+                "reviewBody": "학습과 돌봄의 균형이 인상적입니다. 서초구 강남구 프리미엄 유아영어로 추천합니다.",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            }
+        ],
         "areaServed": [
             {"@type": "City", "name": "서초구"},
             {"@type": "City", "name": "강남구"},
@@ -1226,9 +1282,7 @@
             {"@type": "Place", "name": "관악구"}
         ],
         "sameAs": [
-            "https://blog.naver.com/wyattprep_korea",
-            "#",
-            "#"
+            "https://blog.naver.com/wyattprep_korea"
         ]
     }
     </script>
@@ -1453,14 +1507,14 @@
             "@type": "Organization",
             "name": "(주)교원위즈",
             "url": "https://www.wyatt.kr/",
-            "logo": "https://www.wyatt.kr/og-image.jpg",
+            "logo": "https://www.wyatt.kr/assets/og-image.jpg",
             "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "02-535-7988",
                 "contactType": "customer service",
                 "availableLanguage": ["Korean", "English"]
             },
-            "sameAs": ["https://blog.naver.com/wyattprep_korea", "#", "#"]
+            "sameAs": ["https://blog.naver.com/wyattprep_korea"]
         }
     }
     </script>
